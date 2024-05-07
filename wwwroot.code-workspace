@@ -1,0 +1,10 @@
+{
+	"folders": [
+		{
+			"path": "wwwroot"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "wwwroot"
+	}
+}

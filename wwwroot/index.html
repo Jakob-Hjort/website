@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Webiste</title>
+    <script src="lib/jquery/jquery.min.js"></script>
+    <!--<a href="lib/jquery/jquery.min.map">lib/jquery/jquery.min.map</a>-->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <!--<a href="lib/bootstrap/css/bootstrap.min.css.map">lib/bootstrap/css/bootstrap.min.css.map</a>-->
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <!--<a href="lib/bootstrap/js/bootstrap.min.js.map">lib/bootstrap/js/bootstrap.min.js.map</a>-->
+    <script src="TypeScript/TypeScriptTest.js"></script>
+    <link href="CSS/StyleSheet.css" rel="stylesheet" />
+    <link href="lib/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="lib/swiper-bundle.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header id="header" class="fixed-top ">
+        <div class="container d-flex align-items-center justify-content-between">
+            <h1 class="logo"><a href="index.html">Jakob Hjort</a></h1>
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="nav-link active" href="index.html">Home</a></li>
+                    <li><a class="nav-link " href="about-me.html">About</a></li>
+                    <li class="dropdown">
+                        <a href="#"><span>Portfolio</span> <i class="bi bi-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="#">Løsninger for Uggerly A/S</a></li>
+                            <li class="dropdown">
+                                <a href="Skoleprojektor.html"><span>Skoleprojektor</span> <i class="bi bi-chevron-right"></i></a>
+                                <ul>
+                                    <li><a href="#">ERP system</a></li>
+                                    <li><a href="#">WPF launcher</a></li>
+                                    <li><a href="#">Dansk Vinimport</a></li>
+                                    <li><a href="#">Lommeregner</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="Hobbyprojektor.html"><span>Hobby projektor</span> <i class="bi bi-chevron-right"></i></a>
+                                <ul>
+                                    <li><a href="#">TOPDOWN RPG</a></li>
+                                    <li><a href="#">STAMTRÆ</a></li>
+                                    <li><a href="#">Krydsogbollespil</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+
+    <div class="content">
+        <div class="video-container">
+            <video autoplay muted loop>
+                <source src="baggrund2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="main-text">
+                <h1>Velkommen til mit univers</h1>
+                <p>
+                    Dette er starten på min portfolio. Jeg vil med tiden lægge flere og flere projektor ind.<br />
+                    Her er et udpluk af mine projektor.
+                </p>
+            </div>
+
+            <div class="container">
+                <!-- Portfolio Boxes -->
+                <div class="portfolio">
+                    <!-- Box 1 -->
+                    <div class="box">
+                        <a href="page1.html">
+                            <img src="Csharplogo.jpg" alt="Csharp projektor">
+                            <div class="popout">
+                                <p>C# projektor</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Box 2 -->
+                    <div class="box">
+                        <a href="page2.html">
+                            <img src="platforms-2.png" alt="Powerplatform projektor">
+                            <div class="popout">
+                                <p>Powerplatform projektor</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Box 3 -->
+                    <div class="box">
+                        <a href="page3.html">
+                            <img src="lager-WPF-grundforløb.png" alt="Dansk Vinimport projekt">
+                            <div class="popout">
+                                <p>Dansk vinimport projekt</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Box 4 -->
+                    <div class="box">
+                        <a href="page4.html">
+                            <img src="topdownrpg.png" alt="Topdown rpg spil">
+                            <div class="popout">
+                                <p>topdownrpg spil</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Box 5 -->
+                    <div class="box">
+                        <a href="page5.html">
+                            <!-- Box content for box 5 -->
+                            <div class="popout">
+                                <!-- Description for box 5 -->
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Box 6 -->
+                    <div class="box">
+                        <a href="page6.html">
+                            <!-- Box content for box 6 -->
+                            <div class="popout">
+                                <!-- Description for box 6 -->
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="copyright-wrap d-md-flex py-4">
+                <div class="me-md-auto text-center text-md-start">
+                    <div class="copyright">
+                        <strong>Phone:</strong> +1 5589 55488 55<br>
+                        <strong>Email:</strong> info@example.com<br>
+                        &copy; Copyright <strong><span>Jakob Hjort</span></strong>. All Rights Reserved
+                    </div>
+                </div>
+                <div class="social-links text-center text-md-right pt-3 pt-md-0">
+                    <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                    <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                    <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                    <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                    <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </footer><!-- End Footer -->
+    <script src="main.js"></script>
+</body>
+</html>

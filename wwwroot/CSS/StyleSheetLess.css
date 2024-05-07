@@ -1,0 +1,50 @@
+﻿@BackgroundColor: blue + #00FF00;
+@h6_FontSize: 7px;
+
+@FontSize_Basic: 30px;
+
+body {
+    background-color: @BackgroundColor;
+}
+
+h1 {
+    font-size: @h6_FontSize*10;
+    background-color: @BackgroundColor + #330000;
+}
+
+h2 {
+    font-size: @h6_FontSize*5;
+    background-color: @BackgroundColor + #777700;
+}
+
+.Test {
+    h1
+
+{
+    background-color: red;
+}
+
+}
+
+.Set-Stuff(@Size: 20px, @background-Color: orange) {
+    font-size: @Size;
+    background-color: @background-Color;
+}
+
+
+Header {
+    .Set-Stuff(40px, gold);
+}
+
+
+Footer {
+    .Set-Stuff(@FontSize_Basic, green);
+}
+
+.Test1 {
+    h1
+
+{
+    background-color: orange;
+}
+}
