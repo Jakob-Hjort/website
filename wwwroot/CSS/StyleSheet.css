@@ -65,7 +65,7 @@ body {
     font-weight: 400;
     letter-spacing: 2px;
     text-transform: uppercase;
-    justify-content: left;
+
   }
   
   #header .logo a {
@@ -235,6 +235,7 @@ body {
     font-size: 14px;
     background:  hsl(207, 48%, 8%);
     background-size: cover;
+    ;
   }
  
   
