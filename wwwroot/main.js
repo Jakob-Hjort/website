@@ -12,7 +12,9 @@
         return document.querySelector(el)
       }
     }
-  
+
+
+
     /**
      * Easy event listener function
      */
@@ -232,5 +234,7 @@
      * Initiate Pure Counter 
      */
     new PureCounter();
-  
+
+
+
   })()

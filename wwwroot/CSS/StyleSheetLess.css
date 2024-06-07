@@ -1,50 +1,357 @@
-﻿@BackgroundColor: blue + #00FF00;
-@h6_FontSize: 7px;
-
-@FontSize_Basic: 30px;
-
-body {
-    background-color: @BackgroundColor;
+﻿/* Resetting default margin and padding */
+/*body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;*/
+/* Use Poppins font */
+/*}*/
+/* Navbar styles */
+/*.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);*/
+/* Semi-transparent background */
+/*z-index: 100;*/
+/* Ensure the navbar is above the video */
+/*display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
 }
 
-h1 {
-    font-size: @h6_FontSize*10;
-    background-color: @BackgroundColor + #330000;
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
-h2 {
-    font-size: @h6_FontSize*5;
-    background-color: @BackgroundColor + #777700;
+.menu li {
+    display: inline-block;
+    margin-right: 20px;
 }
 
-.Test {
-    h1
+.menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;*/
+/* Adjust font size as needed */
+/*}*/
+/* Video Background */
+/*.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;*/
+/* Center horizontally */
+/*align-items: flex-end;*/
+/* Align at the bottom */
+/*z-index: -1;*/
+/* Ensure the video is behind other content */
+/*}
 
-{
-    background-color: red;
+.video-container video {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+}*/
+/* Main Content */
+/*.content {
+    position: relative;
+    z-index: 1;*/
+/* Ensure the content is above the video */
+/*padding-top: 70px;*/
+/* Adjust according to the height of your navbar */
+/*padding-bottom: 100px;*/
+/* Add padding to ensure space for scrolling */
+/*color: white;
+    max-width: 1200px;*/
+/* Set a maximum width for the content */
+/*margin: 0 auto;*/
+/* Center the content horizontally */
+/*padding: 20px;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;*/
+/* Stack items vertically */
+/*align-items: center;*/
+/* Center items horizontally */
+/*}
+
+.main-text {
+    text-align: center;
+    margin-top: 100px;*/
+/* Adjust margin as needed */
+/*padding: 0 20px;*/
+/* Add padding to the sides */
+/*margin-bottom: 50px;*/
+/* Add margin at the bottom */
+/*}
+
+.main-text h1 {
+    font-size: 36px;*/
+/* Adjust font size as needed */
+/*margin-bottom: 20px;*/
+/* Adjust margin as needed */
+/*}
+
+.main-text p {
+    font-size: 18px;*/
+/* Adjust font size as needed */
+/*}
+
+
+
+.portfolio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin-bottom: 50px;*/
+/* Add margin at the bottom */
+/*}*/
+/* Portfolio Boxes */
+/*.box {
+    width: calc(33.33% - 20px);*/
+/* Adjust width as needed */
+/*height: 200px;*/
+/* Adjust height as needed */
+/*margin: 10px;
+    background-color: rgba(0, 0, 0, 0.8);*/
+/* Example background color */
+/*border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
 }
 
-.Set-Stuff(@Size: 20px, @background-Color: orange) {
-    font-size: @Size;
-    background-color: @background-Color;
+.box img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;*/
+/* Center the image horizontally */
+/*border-radius: 10px;
 }
 
-
-Header {
-    .Set-Stuff(40px, gold);
+.box:hover {
+    transform: translateY(-10px);
 }
 
-
-Footer {
-    .Set-Stuff(@FontSize_Basic, green);
+.popout {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;*/
+/* Adjust the width as needed */
+/*background-color: rgba(0, 0, 0, 0.8);*/
+/* Example background color */
+/*padding: 5px;*/
+/* Adjust padding as needed */
+/*color: white;
+    transition: 0.3s ease;
+    transform: translateY(100%);
 }
 
-.Test1 {
-    h1
+.box:hover .popout {
+    transform: translateY(0);
+}*/
+/* About Me Section */
+/*.about-me {
+    text-align: center;
+    margin-top: 50px;*/
+/* Adjust margin as needed */
+/*padding: 20px;
+    margin-bottom: 50px;*/
+/* Add margin at the bottom */
+/*}
 
-{
-    background-color: orange;
+.logo {
+    margin-right: 20px;*/
+/* Add margin to create space */
+/*}
+
+.logo img {
+    width: 50px;*/
+/* Adjust the width of the logo */
+/*height: auto;
 }
+
+#loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;*/
+/* Background color */
+/*display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;*/
+/* Ensure it's above other content */
+/*}
+
+.loader {
+    border: 4px solid #f3f3f3;*/
+/* Light grey */
+/*border-top: 4px solid #3498db;*/
+/* Blue */
+/*border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;*/
+/* Animation */
+/*}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}*/
+/* Dropdown container */
+/*.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+}*/
+/* Dropdown button */
+/*.dropbtn {
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}*/
+/* Dropdown content (hidden by default) */
+/*.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    z-index: 1;
+}*/
+/* Links inside the dropdown */
+/*.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}*/
+/* Change color of dropdown links on hover */
+/*.dropdown-content a:hover {
+    background-color: limegreen;
+}*/
+/* Show the dropdown content when the dropdown button is hovered over */
+/*.dropdown:hover .dropdown-content {
+    display: block;
+}*/
+/* ---------------- about me --------------------- */
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+/* Main Content */
+/*.contentabout {
+    position: relative;
+    z-index: 1;
+    color: white;
+    margin-top: 100px;
+    padding: 10px;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.8);*/
+/* Background color */
+/*text-align: center;
 }
+
+.main-textabout {
+    border-radius: 10px;*/
+/* Add border radius */
+/*max-width: 800px;
+}
+
+.main-textabout h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.main-textabout p {
+    font-size: 18px;
+    text-align: center;
+}
+
+.about-box {
+    display: flex;
+    justify-content: center;*/
+/* Center horizontally */
+/*align-items: center;*/
+/* Center vertically */
+/*margin-top: 30px;
+    background-color: rgba(0, 0, 0, 0.8);*/
+/* Background color for main text */
+/*border-radius: 10px;*/
+/* Add border radius */
+/*padding: 20px;*/
+/* Add padding */
+/*}
+
+.about-text {
+    color: white;
+    padding: 10px;
+}
+
+.about-divider {
+    width: 1px;
+    height: 100%;
+    background-color: white;
+    margin: 0 20px;
+}
+
+.boxinfo {
+    display: flex;
+    justify-content: center;*/
+/* Center content horizontally */
+/*margin: 10px auto;*/
+/* Add margin for spacing and center horizontally */
+/*background-color: rgba(0, 0, 0, 0.8);*/
+/* Background color for the container */
+/*border-radius: 10px;*/
+/* Add border radius */
+/*width: fit-content;*/
+/* Set width to fit content */
+/*text-align: center;*/
+/* Center content horizontally */
+/*}
+
+.boxlogo {
+    display: flex;
+    justify-content: center;*/
+/* Center horizontally */
+/*align-items: center;*/
+/* Center vertically */
+/*padding: 10px;*/
+/* Add padding to create space around the image */
+/*height: 300px;
+}
+
+.boxlogo img {
+    max-width: 100%;*/
+/* Ensure image doesn't exceed container width */
+/*max-height: 100%;*/
+/* Ensure image doesn't exceed container height */
+/*border-radius: 10px;*/
+/* Apply border radius to image */
+/*}*/

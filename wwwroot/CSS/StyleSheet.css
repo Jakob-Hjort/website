@@ -235,7 +235,6 @@ body {
     font-size: 14px;
     background:  hsl(207, 48%, 8%);
     background-size: cover;
-    ;
   }
  
   
@@ -303,6 +302,7 @@ i {
     display: flex;
     background-color: rgba(0, 0, 0, 0.8); /* Background color */
     justify-content: center;
+    margin-bottom: 100px; /* Adjust this value based on the height of the footer */
 }
 
 .container {
@@ -542,3 +542,13 @@ i {
         border-radius: 10px; /* Apply border radius to image */
     }
 
+
+.expanded-project-container {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+    margin-bottom: 100px; /* Adjust this value based on the height of the footer */
+}
